@@ -1,0 +1,751 @@
+<!doctype html>
+<!--
+  PREP — صفحة الهبوط
+  ────────────────────────────────────────────────────────────
+  ملاحظات قبل النشر:
+  1) استبدل الدومين https://prep.sa/ في canonical و og:url و sitemap.xml و JSON-LD.
+  2) كل الأرقام والأسعار والتقييمات والآراء بيانات وهمية توضيحية — استبدلها بالبيانات الحقيقية.
+  3) روابط App Store / Google Play مؤقتة (#) — ضع الروابط الحقيقية.
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>PREP — منصتك الموحدة للتحضير للاختبارات القياسية</title>
+<meta name="description" content="منصة PREP تجمع التحضير لاختبارات القدرات العامة والتحصيلي وSTEP وIELTS واختبارات الهيئة السعودية للتخصصات الصحية في مكان واحد، بمحتوى تعليمي مدعوم بالذكاء الاصطناعي: شرح صوتي، شرائح، إنفوجرافيك، وأسئلة تطبيقية.">
+<meta name="keywords" content="اختبار القدرات, الاختبار التحصيلي, قياس, STEP, IELTS, الهيئة السعودية للتخصصات الصحية, تحضير اختبارات, بنك أسئلة, اختبار تجريبي, PREP">
+<meta name="author" content="PREP">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B2140">
+<link rel="canonical" href="https://prep.sa/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="PREP">
+<meta property="og:title" content="PREP — منصتك الموحدة للتحضير للاختبارات القياسية">
+<meta property="og:description" content="قدرات، تحصيلي، STEP، IELTS، واختبارات التخصصات الصحية — محتوى منظّم ومدعوم بالذكاء الاصطناعي، واختبارات تجريبية تقيس مستواك أولًا بأول.">
+<meta property="og:url" content="https://prep.sa/">
+<meta property="og:image" content="https://prep.sa/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PREP — منصتك الموحدة للتحضير لجميع الاختبارات القياسية">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PREP — منصتك الموحدة للتحضير للاختبارات القياسية">
+<meta name="twitter:description" content="قدرات، تحصيلي، STEP، IELTS، واختبارات التخصصات الصحية في تطبيق واحد.">
+<meta name="twitter:image" content="https://prep.sa/assets/og-image.png">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://prep.sa/#org",
+      "name": "PREP",
+      "alternateName": "منصة PREP التحضيرية",
+      "url": "https://prep.sa/",
+      "logo": "https://prep.sa/assets/logo.png",
+      "description": "منصة تحضيرية للاختبارات القياسية في المملكة العربية السعودية.",
+      "address": { "@type": "PostalAddress", "addressCountry": "SA", "addressLocality": "الرياض" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@prep.sa",
+        "availableLanguage": ["ar", "en"]
+      },
+      "sameAs": ["https://twitter.com/prep", "https://www.instagram.com/prep", "https://www.tiktok.com/@prep"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://prep.sa/#website",
+      "url": "https://prep.sa/",
+      "name": "PREP",
+      "inLanguage": "ar",
+      "publisher": { "@id": "https://prep.sa/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "PREP — تطبيق الطالب",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "EducationalApplication",
+      "inLanguage": "ar",
+      "publisher": { "@id": "https://prep.sa/#org" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SAR" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://prep.sa/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "هل يمكنني تجربة المنصة قبل الشراء؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "نعم. إنشاء الحساب مجاني، وتستطيع تصفّح محتويات أي دورة ومشاهدة عيّنة من الدروس قبل الشراء." } },
+        { "@type": "Question", "name": "متى يُفتح المحتوى بعد الدفع؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "فور تأكيد عملية الدفع مباشرة. لا يُفعَّل الوصول إلى المحتوى إلا بعد نجاح الدفع." } },
+        { "@type": "Question", "name": "ما طرق الدفع المتاحة؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "Apple Pay، وبطاقات Visa، وبطاقات mada." } },
+        { "@type": "Question", "name": "هل الاشتراك في دورة واحدة أم في باقة؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "الاثنان متاحان: تشتري دورة مفردة، أو باقة تجمع عدة دورات بسعر أقل." } },
+        { "@type": "Question", "name": "هل أحصل على شهادة؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "نعم، تُصدر شهادة إتمام باسمك بعد إنهاء الدورة واجتياز الاختبار التجريبي." } },
+        { "@type": "Question", "name": "هل يعمل التطبيق بدون إنترنت؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "يمكنك حفظ الدروس للمشاهدة لاحقًا، وتُحفظ إجاباتك محليًا وتُرفع عند عودة الاتصال." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a class="brand" href="#hero" aria-label="PREP — الصفحة الرئيسية">
+      <img class="brand__mark" src="assets/logo.png" alt="شعار PREP" width="500" height="305" fetchpriority="high">
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="التنقل الرئيسي">
+      <a href="#exams">الاختبارات</a>
+      <a href="#how">كيف تعمل</a>
+      <a href="#ai">المحتوى</a>
+      <a href="#plans">الباقات</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a class="btn btn--gold btn--sm nav__cta" href="#cta">ابدأ الآن مجانًا</a>
+    </nav>
+
+    <button class="nav__burger" id="navBurger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="hero">
+  <div class="hero__sheet" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <ul class="chips" aria-label="الاختبارات المدعومة">
+        <li>قدرات</li><li>تحصيلي</li><li>STEP</li><li>IELTS</li><li>التخصصات الصحية</li>
+      </ul>
+
+      <h1 class="hero__h1">منصتك الموحدة للتحضير <em>لجميع الاختبارات القياسية</em></h1>
+
+      <p class="hero__lead">
+        محتوى تعليمي منظّم ومدعوم بالذكاء الاصطناعي: شرح صوتي، شرائح، إنفوجرافيك،
+        وأسئلة تطبيقية. واختبارات تجريبية تقيس مستواك الحقيقي أولًا بأول.
+      </p>
+
+      <div class="hero__acts">
+        <a class="btn btn--gold" href="#cta">ابدأ الآن مجانًا</a>
+        <a class="btn btn--ghost" href="#plans">استعرض الدورات</a>
+      </div>
+
+      <dl class="hero__trust">
+        <div><dt>طالب مسجّل</dt><dd dir="ltr" data-count="12400" data-suffix="+">12,400+</dd></div>
+        <div><dt>دورة ومسار</dt><dd dir="ltr" data-count="68">68</dd></div>
+        <div><dt>تقييم التطبيق</dt><dd dir="ltr">4.8<span class="hero__trust-of">/5</span></dd></div>
+      </dl>
+    </div>
+
+    <!-- 3D phone cluster -->
+    <div class="stage" id="stage" aria-label="لقطات من تطبيق الطالب">
+      <div class="cluster" id="cluster">
+
+        <!-- يسار: نتيجة الاختبار -->
+        <figure class="phone phone--l">
+          <div class="phone__body" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="sb"><span>9:41</span><i class="sb__ic"></i></div>
+              <div class="scr scr--result">
+                <div class="result__top">
+                  <div class="ring" id="ring">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                      <circle class="ring__bg" cx="50" cy="50" r="42"/>
+                      <circle class="ring__fg" cx="50" cy="50" r="42"/>
+                    </svg>
+                    <div class="ring__val"><b data-count="80">80</b><small>من 100</small></div>
+                  </div>
+                  <p class="result__title">أنت على الطريق</p>
+                  <p class="result__sub">ركّز على القسم اللفظي هذا الأسبوع وأعِد النموذج بعد 3 أيام.</p>
+                </div>
+                <div class="result__list">
+                  <div class="mrow">
+                    <div class="mrow__h"><span>القسم الكمّي</span><b class="c-teal">84%</b></div>
+                    <div class="bar"><i class="bar--teal" style="--w:84%"></i></div>
+                    <p class="mrow__n">5 من 6 نماذج · متوسط الوقت 52 ثانية</p>
+                  </div>
+                  <div class="mrow">
+                    <div class="mrow__h"><span>القسم اللفظي</span><b class="c-gold">71%</b></div>
+                    <div class="bar"><i class="bar--gold" style="--w:71%"></i></div>
+                    <p class="mrow__n">التناظر اللفظي أضعف نقطة</p>
+                  </div>
+                  <div class="mrow">
+                    <div class="mrow__h"><span>إدارة الوقت</span><b class="c-navy">92%</b></div>
+                    <div class="bar"><i class="bar--navy" style="--w:92%"></i></div>
+                    <p class="mrow__n">أنهيت الاختبار قبل الوقت بـ 4 دقائق</p>
+                  </div>
+                </div>
+                <div class="scr__cta" aria-hidden="true">استلام الشهادة</div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="sr-only">شاشة نتيجة الاختبار التجريبي</figcaption>
+        </figure>
+
+        <!-- وسط: الرئيسية -->
+        <figure class="phone phone--c">
+          <div class="phone__body" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="sb"><span>9:41</span><i class="sb__ic"></i></div>
+              <div class="scr scr--home">
+                <div class="hhead">
+                  <div class="hhead__id">
+                    <span class="ava">ع</span>
+                    <span><small>صباح الخير</small><b>عبدالله</b></span>
+                  </div>
+                  <div class="hhead__ic">
+                    <span class="iconbtn" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+                      <i class="dot-live"></i>
+                    </span>
+                    <span class="iconbtn" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="today">
+                  <div class="today__row1">
+                    <span class="today__tag">خطة اليوم</span>
+                    <span class="today__cd">12 يومًا للاختبار</span>
+                  </div>
+                  <p class="today__h">التناظر اللفظي</p>
+                  <p>قدرات لفظي · الدرس 7 من 12</p>
+                  <div class="today__row2">
+                    <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+                    <div class="bar bar--onDark"><i class="bar--grad" style="--w:68%"></i></div>
+                    <span class="today__pct">68%</span>
+                  </div>
+                </div>
+
+                <div class="grid3">
+                  <div class="kpi"><i class="dot dot--teal"></i><b>79%</b><small>إجادة</small></div>
+                  <div class="kpi"><i class="dot dot--gold"></i><b>84</b><small>الدرجة</small></div>
+                  <div class="kpi"><i class="dot dot--teal"></i><b>6</b><small>أيام متتالية</small></div>
+                </div>
+
+                <div class="grid3">
+                  <div class="quick"><span class="quick__ic quick__ic--navy"><svg viewBox="0 0 24 24"><path d="M9 4h6v16H9z"/><path d="M4 9h5v11H4zM15 12h5v8h-5z"/></svg></span><small>الاختبارات</small></div>
+                  <div class="quick"><span class="quick__ic quick__ic--teal"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><small>الباقات</small></div>
+                  <div class="quick"><span class="quick__ic quick__ic--gold"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span><small>تقدّمي</small></div>
+                </div>
+
+                <div class="mock">
+                  <span class="mock__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                  <span class="mock__t"><b>اختبار تجريبي مؤقّت</b><small>120 سؤالًا في 60 دقيقة</small></span>
+                  <span class="mock__go" aria-hidden="true">‹</span>
+                </div>
+              </div>
+              <div class="tabbar">
+                <span class="tabbar__i is-on"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg><small>الرئيسية</small></span>
+                <span class="tabbar__i"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><small>الدورات</small></span>
+                <span class="tabbar__i"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg><small>دوراتي</small></span>
+                <span class="tabbar__i"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><small>حسابي</small></span>
+              </div>
+            </div>
+          </div>
+          <figcaption class="sr-only">الشاشة الرئيسية في تطبيق الطالب</figcaption>
+        </figure>
+
+        <!-- يمين: محتويات الدرس -->
+        <figure class="phone phone--r">
+          <div class="phone__body" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="sb"><span>9:41</span><i class="sb__ic"></i></div>
+              <div class="scr scr--lesson">
+                <div class="lhead">
+                  <span class="lhead__back" aria-hidden="true">›</span>
+                  <span><b>التناظر اللفظي</b><small>قدرات لفظي · الدرس السابع</small></span>
+                </div>
+                <ul class="llist">
+                  <li><span class="llist__ic llist__ic--navy"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg></span><span><b>الشرائح التعليمية</b><small>18 شريحة</small></span><i>‹</i></li>
+                  <li><span class="llist__ic llist__ic--teal"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M17 9a4 4 0 0 1 0 6"/></svg></span><span><b>الشرح الصوتي</b><small>20 دقيقة</small></span><i>‹</i></li>
+                  <li><span class="llist__ic llist__ic--gold"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 15v-3M12 15V9M17 15v-5"/></svg></span><span><b>الإنفوجرافيك</b><small>مخطط تفاعلي</small></span><i>‹</i></li>
+                  <li class="is-on"><span class="llist__ic llist__ic--gold2"><svg viewBox="0 0 24 24"><path d="m12 4 2.4 5 5.6.8-4 3.9 1 5.5-5-2.6-5 2.6 1-5.5-4-3.9 5.6-.8z"/></svg></span><span><b>المحتوى التفاعلي</b><small>تمرين سحب وتصنيف</small></span><i>‹</i></li>
+                  <li><span class="llist__ic llist__ic--mint"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.2 2.4c-.5.2-.7.6-.7 1.1v.5"/><circle cx="12" cy="16.5" r=".6"/></svg></span><span><b>الأسئلة التطبيقية</b><small>3 أسئلة</small></span><i>‹</i></li>
+                </ul>
+                <div class="lprog">
+                  <div class="lprog__h"><span>تقدّمك في الدرس</span><b>3 من 5</b></div>
+                  <div class="bar"><i class="bar--teal" style="--w:60%"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="sr-only">شاشة محتويات الدرس</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXAMS ══════════ -->
+<section class="sec sec--tint" id="exams">
+  <div class="wrap">
+    <header class="shead">
+      <p class="eyebrow">الاختبارات المدعومة</p>
+      <h2>اختبار واحد أو خمسة — التحضير في نفس المكان</h2>
+      <p class="shead__lead">كل اختبار له مساره ودروسه وبنك أسئلته الخاص، مبني على نمط الاختبار الحقيقي.</p>
+    </header>
+
+    <ul class="exams">
+      <li class="exam">
+        <span class="exam__ic"><svg viewBox="0 0 24 24"><path d="M3 7.5 12 3l9 4.5-9 4.5z"/><path d="M7 10v5c0 1.7 2.2 3 5 3s5-1.3 5-3v-5"/></svg></span>
+        <h3>اختبار القدرات العامة</h3>
+        <p>القسمان اللفظي والكمّي، من التأسيس حتى النماذج الكاملة.</p>
+        <ul class="exam__meta"><li>38 درسًا</li><li>4,200 سؤال</li></ul>
+      </li>
+      <li class="exam">
+        <span class="exam__ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+        <h3>الاختبار التحصيلي</h3>
+        <p>المسارَان العلمي والأدبي، مقسّمة حسب مناهج الثانوية.</p>
+        <ul class="exam__meta"><li>42 درسًا</li><li>3,800 سؤال</li></ul>
+      </li>
+      <li class="exam">
+        <span class="exam__ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <h3>اختبارات الهيئة السعودية للتخصصات الصحية</h3>
+        <p>مسارات منفصلة لكل تخصص، مع بنك أسئلة يحاكي نمط الاختبار.</p>
+        <ul class="exam__meta"><li>26 مسارًا</li><li>تحديث دوري</li></ul>
+      </li>
+      <li class="exam">
+        <span class="exam__ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg></span>
+        <h3>اختبار IELTS</h3>
+        <p>المهارات الأربع مع تدريب على المهام الكتابية والمحادثة.</p>
+        <ul class="exam__meta"><li>30 درسًا</li><li>4 مهارات</li></ul>
+      </li>
+      <li class="exam">
+        <span class="exam__ic"><svg viewBox="0 0 24 24"><path d="M5 4h14v16l-7-3-7 3z"/><path d="M9 9h6"/></svg></span>
+        <h3>اختبار STEP</h3>
+        <p>القواعد والمفردات والاستيعاب، بنماذج على نمط الاختبار.</p>
+        <ul class="exam__meta"><li>24 درسًا</li><li>2,100 سؤال</li></ul>
+      </li>
+      <li class="exam exam--soon">
+        <span class="exam__ic"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        <h3>اختبارات أخرى</h3>
+        <p>نضيف اختبارات جديدة تباعًا حسب طلب الطلاب.</p>
+        <ul class="exam__meta"><li>قريبًا</li></ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ HOW ══════════ -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <header class="shead">
+      <p class="eyebrow">كيف تعمل المنصة</p>
+      <h2>من إنشاء الحساب إلى أول درس — خمس خطوات</h2>
+    </header>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step__n">1</span>
+        <h3>أنشئ حسابك</h3>
+        <p>بالبريد الإلكتروني أو رقم الجوال. لا تحتاج بطاقة في هذه المرحلة.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">2</span>
+        <h3>استعرض الدورات</h3>
+        <p>اختر اختبارك، وشاهد قائمة الدروس وعيّنة من المحتوى قبل الشراء.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">3</span>
+        <h3>اختر دورة أو باقة</h3>
+        <p>سعر واضح لكل دورة، وباقات تجمع عدة دورات بتكلفة أقل.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">4</span>
+        <h3>ادفع إلكترونيًا</h3>
+        <p>عبر Apple&nbsp;Pay أو Visa أو mada. العملية تتم داخل التطبيق.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">5</span>
+        <h3>ابدأ التعلّم</h3>
+        <p>المحتوى يُفتح فور تأكيد الدفع، وتقدّمك يُحفظ على كل أجهزتك.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══════════ AI CONTENT ══════════ -->
+<section class="sec sec--dark" id="ai">
+  <div class="hero__sheet hero__sheet--soft" aria-hidden="true"></div>
+  <div class="wrap ai__in">
+    <div class="ai__copy">
+      <header class="shead shead--start">
+        <p class="eyebrow eyebrow--onDark">المحتوى المدعوم بالذكاء الاصطناعي</p>
+        <h2>درس واحد، أربع طرق لاستيعابه</h2>
+        <p class="shead__lead shead__lead--onDark">
+          المادة العلمية نفسها تُقدَّم بأربع صيغ. اسمعها في الطريق، أو راجعها في صورة واحدة قبل النوم.
+        </p>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="أنماط المحتوى">
+        <button class="tab is-on" role="tab" id="tab-audio" aria-selected="true" aria-controls="pan-audio" data-pane="audio">
+          <span class="tab__ic"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M17 9a4 4 0 0 1 0 6"/></svg></span>
+          <span class="tab__tx"><b>الشرح الصوتي</b><small>استمع للدرس وأنت في الطريق</small></span>
+        </button>
+        <button class="tab" role="tab" id="tab-slides" aria-selected="false" aria-controls="pan-slides" tabindex="-1" data-pane="slides">
+          <span class="tab__ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg></span>
+          <span class="tab__tx"><b>الشرائح التعليمية</b><small>المادة في شرائح منظّمة ومتسلسلة</small></span>
+        </button>
+        <button class="tab" role="tab" id="tab-quiz" aria-selected="false" aria-controls="pan-quiz" tabindex="-1" data-pane="quiz">
+          <span class="tab__ic"><svg viewBox="0 0 24 24"><path d="m12 4 2.4 5 5.6.8-4 3.9 1 5.5-5-2.6-5 2.6 1-5.5-4-3.9 5.6-.8z"/></svg></span>
+          <span class="tab__tx"><b>المحتوى التفاعلي</b><small>سؤال تطبيقي بعد كل فكرة</small></span>
+        </button>
+        <button class="tab" role="tab" id="tab-info" aria-selected="false" aria-controls="pan-info" tabindex="-1" data-pane="info">
+          <span class="tab__ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 15v-3M12 15V9M17 15v-5"/></svg></span>
+          <span class="tab__tx"><b>الإنفوجرافيك</b><small>المفاهيم الأساسية في صورة واحدة</small></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="ai__view">
+      <div class="phone phone--solo">
+        <div class="phone__body">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="sb sb--dark"><span>9:41</span><i class="sb__ic"></i></div>
+
+            <!-- صوتي -->
+            <div class="scr scr--audio pane is-on" id="pan-audio" role="tabpanel" aria-labelledby="tab-audio">
+              <p class="audio__eyebrow">الشرح الصوتي</p>
+              <div class="audio__art"><img src="assets/logo.png" alt="" width="500" height="305"></div>
+              <p class="audio__t">التناظر اللفظي</p>
+              <p class="audio__s">قدرات لفظي · الدرس السابع</p>
+              <div class="audio__bar"><i style="--w:42%"></i></div>
+              <div class="audio__times"><span>08:24</span><span>20:00</span></div>
+              <div class="audio__ctl">
+                <span class="audio__sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 6v12l-9-6zM9 6v12l-9-6z"/></svg></span>
+                <span class="audio__pl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+                <span class="audio__sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 6v12l9-6zM15 6v12l9-6z"/></svg></span>
+              </div>
+            </div>
+
+            <!-- شرائح -->
+            <div class="scr scr--slides pane" id="pan-slides" role="tabpanel" aria-labelledby="tab-slides" hidden>
+              <div class="slides__top"><span>شريحة 7 من 18</span><span class="slides__chip">التناظر اللفظي</span></div>
+              <div class="slides__card">
+                <p class="slides__h">التناظر اللفظي — ما هو؟</p>
+                <ul>
+                  <li><i></i>علاقة منطقية بين كلمتين</li>
+                  <li><i></i>يُقاس بمقارنة العلاقة لا المعنى</li>
+                  <li><i></i>خمسة أنماط شائعة في الاختبار</li>
+                </ul>
+              </div>
+              <div class="slides__thumbs"><span></span><span></span><span class="is-on"></span><span></span></div>
+              <div class="slides__nav"><span class="slides__btn">السابق</span><span class="slides__btn slides__btn--p">التالي</span></div>
+            </div>
+
+            <!-- تفاعلي -->
+            <div class="scr scr--quiz pane" id="pan-quiz" role="tabpanel" aria-labelledby="tab-quiz" hidden>
+              <div class="quiz__top"><span>سؤال 2 من 3</span><span class="quiz__chip">تطبيقي</span></div>
+              <p class="quiz__q">صنّف الكلمات التالية حسب نوع العلاقة:</p>
+              <div class="quiz__pool"><span>جزء من كل</span><span>ضدّية</span><span>ترادف</span></div>
+              <div class="quiz__drops">
+                <div class="quiz__drop is-ok">إصبع : يد</div>
+                <div class="quiz__drop">كرم : بخل</div>
+              </div>
+              <div class="scr__cta" aria-hidden="true">تحقّق من الإجابة</div>
+            </div>
+
+            <!-- إنفوجرافيك -->
+            <div class="scr scr--info pane" id="pan-info" role="tabpanel" aria-labelledby="tab-info" hidden>
+              <div class="info__top"><span>إنفوجرافيك</span><span class="info__chip">أنماط التناظر</span></div>
+              <div class="info__graph">
+                <div class="info__b" style="--h:46%"><i></i><small>ترادف</small></div>
+                <div class="info__b info__b--gold" style="--h:78%"><i></i><small>جزء/كل</small></div>
+                <div class="info__b" style="--h:62%"><i></i><small>ضدّية</small></div>
+                <div class="info__b" style="--h:34%"><i></i><small>سببية</small></div>
+                <div class="info__b" style="--h:52%"><i></i><small>وظيفة</small></div>
+              </div>
+              <p class="info__note">نمط «جزء من كل» هو الأكثر تكرارًا في نماذج القدرات.</p>
+              <div class="info__legend"><span><i class="dot dot--gold"></i>الأعلى تكرارًا</span><span><i class="dot dot--teal"></i>باقي الأنماط</span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PLANS ══════════ -->
+<section class="sec sec--tint" id="plans">
+  <div class="wrap">
+    <header class="shead">
+      <p class="eyebrow">الدورات والباقات</p>
+      <h2>ادفع مرة واحدة — بدون تجديد تلقائي</h2>
+      <p class="shead__lead">اشترِ دورة مفردة، أو باقة تجمع عدة دورات بسعر أقل. المحتوى يُفتح فور نجاح الدفع.</p>
+    </header>
+
+    <ul class="plans">
+      <li class="plan">
+        <h3 class="plan__n">الدورة المفردة</h3>
+        <p class="plan__d">تناسبك إذا كنت تحضّر لاختبار واحد فقط.</p>
+        <p class="plan__p"><b>199</b><span>ر.س · شهران</span></p>
+        <ul class="plan__f">
+          <li>دورة واحدة بكل دروسها</li>
+          <li>بنك أسئلة الدورة</li>
+          <li>اختبار تجريبي واحد</li>
+          <li>تقرير أداء بعد الاختبار</li>
+        </ul>
+        <a class="btn btn--outline btn--full" href="#cta">اختر هذه الدورة</a>
+      </li>
+
+      <li class="plan plan--hero">
+        <span class="plan__flag">الأكثر اختيارًا</span>
+        <h3 class="plan__n">باقة القدرات الشاملة</h3>
+        <p class="plan__d">كل ما تحتاجه للقسمين اللفظي والكمّي حتى يوم الاختبار.</p>
+        <p class="plan__p"><b>399</b><span>ر.س · 6 أشهر</span></p>
+        <ul class="plan__f">
+          <li>كل دورات القدرات</li>
+          <li>بنك أسئلة كامل — 4,200 سؤال</li>
+          <li>6 اختبارات تجريبية مؤقّتة</li>
+          <li>تقارير تقدّم أسبوعية</li>
+          <li>شهادة إتمام باسمك</li>
+        </ul>
+        <a class="btn btn--gold btn--full" href="#cta">ابدأ بهذه الباقة</a>
+      </li>
+
+      <li class="plan">
+        <h3 class="plan__n">الباقة الشاملة</h3>
+        <p class="plan__d">لمن يحضّر لأكثر من اختبار خلال السنة.</p>
+        <p class="plan__p"><b>699</b><span>ر.س · سنة</span></p>
+        <ul class="plan__f">
+          <li>كل الاختبارات وكل الدورات</li>
+          <li>اختبارات تجريبية غير محدودة</li>
+          <li>مسار مخصّص حسب مستواك</li>
+          <li>أولوية في الدعم</li>
+        </ul>
+        <a class="btn btn--outline btn--full" href="#cta">اطّلع على التفاصيل</a>
+      </li>
+    </ul>
+
+    <div class="pay">
+      <p class="pay__t">طرق الدفع المعتمدة</p>
+      <ul class="pay__l">
+        <li>Apple&nbsp;Pay</li>
+        <li>VISA</li>
+        <li>mada</li>
+      </ul>
+      <p class="pay__n">لا يُفعَّل الوصول إلى المحتوى إلا بعد نجاح عملية الدفع.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROOF ══════════ -->
+<section class="sec" id="proof">
+  <div class="wrap">
+    <ul class="nums">
+      <li><b dir="ltr" data-count="12400">12,400</b><small>طالب مسجّل</small></li>
+      <li><b dir="ltr" data-count="68">68</b><small>دورة ومسار</small></li>
+      <li><b dir="ltr" data-count="14000" data-suffix="+">14,000+</b><small>سؤال في بنك الأسئلة</small></li>
+      <li><b dir="ltr">4.8<span class="nums__of">/5</span></b><small>متوسط تقييم التطبيق</small></li>
+    </ul>
+
+    <header class="shead">
+      <p class="eyebrow">آراء الطلاب</p>
+      <h2>ماذا تغيّر بعد شهرين من الاستخدام</h2>
+    </header>
+
+    <ul class="quotes">
+      <li class="quote">
+        <p class="quote__x">«كنت أذاكر بلا ترتيب. تقرير الاختبار التجريبي وضّح لي إن مشكلتي في التناظر اللفظي تحديدًا، فركّزت عليه أسبوعين.»</p>
+        <div class="quote__w"><span class="quote__a">ن</span><span><b>نورة الشمري</b><small>قدرات · من 74 إلى 88</small></span></div>
+      </li>
+      <li class="quote">
+        <p class="quote__x">«الشرح الصوتي حل لي مشكلة الوقت. أسمع الدرس في الطريق للجامعة وأراجع الإنفوجرافيك بالليل.»</p>
+        <div class="quote__w"><span class="quote__a">م</span><span><b>محمد العتيبي</b><small>تحصيلي · من 68 إلى 85</small></span></div>
+      </li>
+      <li class="quote">
+        <p class="quote__x">«الاختبارات المؤقّتة عوّدتني على ضغط الوقت. أول مرة أخلّص النموذج كامل قبل انتهاء الوقت.»</p>
+        <div class="quote__w"><span class="quote__a">ر</span><span><b>ريم القحطاني</b><small>STEP · من 61 إلى 79</small></span></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="sec sec--faq" id="faq">
+  <!-- زخرفة: أقواس دائرية خفيفة على جانبي العمود -->
+  <svg class="faq__arc faq__arc--a" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+    <circle cx="100" cy="100" r="99" stroke-width=".6" opacity=".5"/>
+    <circle cx="100" cy="100" r="87" stroke-width="7" opacity=".12"/>
+    <circle cx="100" cy="100" r="73" stroke-width=".6" opacity=".38"/>
+    <circle cx="100" cy="100" r="55" stroke-width="4" opacity=".1"/>
+  </svg>
+  <svg class="faq__arc faq__arc--b" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+    <circle cx="100" cy="100" r="99" stroke-width=".6" opacity=".45"/>
+    <circle cx="100" cy="100" r="86" stroke-width="8" opacity=".11"/>
+    <circle cx="100" cy="100" r="70" stroke-width=".6" opacity=".34"/>
+  </svg>
+
+  <div class="wrap">
+    <header class="shead">
+      <p class="eyebrow">الأسئلة الشائعة</p>
+      <h2>أسئلة يسألها الطلاب قبل التسجيل</h2>
+      <p class="shead__lead">كل ما تحتاج معرفته قبل إنشاء حسابك.</p>
+    </header>
+
+    <div class="faq" id="faqList">
+      <details class="faq__i" open>
+        <summary>
+          <span class="faq__q">هل يمكنني تجربة المنصة قبل الشراء؟</span>
+          <span class="faq__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="faq__a"><p>نعم. إنشاء الحساب مجاني، وتستطيع تصفّح محتويات أي دورة ومشاهدة عيّنة من الدروس قبل الشراء.</p></div>
+      </details>
+      <details class="faq__i">
+        <summary>
+          <span class="faq__q">متى يُفتح المحتوى بعد الدفع؟</span>
+          <span class="faq__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="faq__a"><p>فور تأكيد عملية الدفع مباشرة. لا يُفعَّل الوصول إلى المحتوى إلا بعد نجاح الدفع، وتصلك رسالة تأكيد على بريدك.</p></div>
+      </details>
+      <details class="faq__i">
+        <summary>
+          <span class="faq__q">ما طرق الدفع المتاحة؟</span>
+          <span class="faq__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="faq__a"><p>Apple&nbsp;Pay، وبطاقات Visa، وبطاقات mada. تتم العملية داخل التطبيق ولا نحتفظ ببيانات بطاقتك.</p></div>
+      </details>
+      <details class="faq__i">
+        <summary>
+          <span class="faq__q">هل أشترك في دورة واحدة أم في باقة؟</span>
+          <span class="faq__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="faq__a"><p>الاثنان متاحان. اشترِ دورة مفردة إذا كنت تحضّر لاختبار واحد، أو باقة تجمع عدة دورات بتكلفة أقل.</p></div>
+      </details>
+      <details class="faq__i">
+        <summary>
+          <span class="faq__q">هل أحصل على شهادة؟</span>
+          <span class="faq__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="faq__a"><p>نعم. تُصدر شهادة إتمام باسمك بعد إنهاء دروس الدورة واجتياز الاختبار التجريبي، ويمكنك مشاركتها مباشرة.</p></div>
+      </details>
+      <details class="faq__i">
+        <summary>
+          <span class="faq__q">هل يعمل التطبيق بدون إنترنت؟</span>
+          <span class="faq__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="faq__a"><p>يمكنك حفظ الدروس للمشاهدة لاحقًا. وإذا انقطع الاتصال أثناء حل الأسئلة، تُحفظ إجاباتك محليًا وتُرفع عند عودة الاتصال.</p></div>
+      </details>
+
+      <div class="faq__ask">
+        <div class="faq__ask-tx">
+          <h3>لسه عندك سؤال؟</h3>
+          <p>اكتب لنا سؤالك ونرد عليك خلال يوم عمل واحد.</p>
+        </div>
+        <a class="btn btn--white btn--sm" href="mailto:support@prep.sa">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section class="cta" id="cta">
+  <div class="hero__sheet hero__sheet--soft" aria-hidden="true"></div>
+  <div class="wrap cta__in">
+    <p class="eyebrow eyebrow--onDark">ابدأ اليوم</p>
+    <h2 class="cta__h">أنشئ حسابك في دقيقة، وشوف مستواك الحقيقي في أول اختبار تجريبي</h2>
+    <p class="cta__l">التسجيل مجاني. لن نطلب بطاقتك إلا عند شراء دورة.</p>
+
+    <div class="cta__acts">
+      <a class="btn btn--gold btn--lg" href="#">أنشئ حسابًا مجانًا</a>
+      <a class="btn btn--ghost btn--lg" href="#plans">استعرض الباقات</a>
+    </div>
+
+    <div class="stores">
+      <p class="stores__t">حمّل تطبيق الطالب</p>
+      <div class="stores__l">
+        <a class="store" href="#" aria-label="حمّل التطبيق من App Store">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.9-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.7-2.2c.9-1.2 1.2-2.5 1.3-2.5s-2.4-1-2.4-3.5zM14.2 5.6c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2-.5 2.7-1.3z"/></svg>
+          <span><small>حمّله من</small><b>App Store</b></span>
+        </a>
+        <a class="store" href="#" aria-label="حمّل التطبيق من Google Play">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.2v17.6c0 .5.5.8.9.6l9.6-5.5-3-3zM16.3 10.7 6.4 5l6.6 6.6zM6.4 19l9.9-5.7-2.9-2.9zM17.7 11.5l2.8 1.6c.6.3.6 1.2 0 1.5l-2.8 1.6-3-2.4z"/></svg>
+          <span><small>حمّله من</small><b>Google Play</b></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img class="foot__logo" src="assets/logo.png" alt="شعار PREP" width="500" height="305" loading="lazy">
+      <p>منصة تحضيرية للاختبارات القياسية — محتوى منظّم، اختبارات تحاكي النمط الحقيقي، وتقارير تقيس تقدّمك.</p>
+    </div>
+
+    <nav class="foot__col" aria-label="روابط المنصة">
+      <h3>المنصة</h3>
+      <a href="#exams">الاختبارات المدعومة</a>
+      <a href="#how">كيف تعمل</a>
+      <a href="#ai">المحتوى التعليمي</a>
+      <a href="#plans">الدورات والباقات</a>
+    </nav>
+
+    <nav class="foot__col" aria-label="روابط الدعم">
+      <h3>الدعم</h3>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="#">الشروط والأحكام</a>
+      <a href="#">سياسة الخصوصية</a>
+      <a href="mailto:support@prep.sa">support@prep.sa</a>
+    </nav>
+
+    <div class="foot__col">
+      <h3>تابعنا</h3>
+      <ul class="social">
+        <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h3.6l4.3 5.8L16.8 4H20l-6.4 7.6L20.4 20h-3.6l-4.6-6.2L6.9 20H3.6l6.8-8.1z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r="1.2"/></svg></a></li>
+        <li><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v10.5a3 3 0 1 1-2.4-2.94V13a1 1 0 1 0 .4.8V3zM14 3c.4 2.2 2 3.7 4.4 3.9v2.4C16.9 9.2 15.3 8.6 14 7.5z"/></svg></a></li>
+      </ul>
+      <p class="foot__mail">الرياض، المملكة العربية السعودية</p>
+    </div>
+  </div>
+
+  <div class="wrap foot__bar">
+    <small>© <span id="year">2026</span> PREP. جميع الحقوق محفوظة.</small>
+    <small class="foot__note">الأرقام والآراء المعروضة توضيحية.</small>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
