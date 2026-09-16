@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مشترياتي — PREP</title>
+<meta name="description" content="أين تجد مشترياتك من موقع PREP، ومدة الوصول، وإيصال الشراء، وكيف تطلب الاسترداد.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0B2140">
+<link rel="icon" href="assets/logo.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/flow.css">
+</head>
+
+<body class="flowpage">
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="fhead">
+  <div class="wrap fhead__in">
+    <a class="fhead__brand" href="index.html" aria-label="PREP — العودة إلى الصفحة الرئيسية">
+      <img src="assets/logo.png" alt="" width="500" height="305">
+    </a>
+    <p class="fhead__secure">مشترياتي</p>
+    <a class="fhead__back" href="index.html#plans">تصفّح الباقات</a>
+  </div>
+</header>
+
+<!-- LP-07: لا يوجد حساب ولا سجل مشتريات على الموقع — بقرار الباك إند (CN-001).
+     المشتريات ومدد الوصول في التطبيق، والإيصال على البريد، والاسترداد عبر الدعم. -->
+<main class="wrap amain" id="main">
+  <div class="acc">
+    <header class="acc__head">
+      <div>
+        <p class="eyebrow">مشترياتي</p>
+        <h1 class="acc__h">مشترياتك موجودة في تطبيق PREP</h1>
+        <p class="acc__who">لا يوجد حساب منفصل للموقع. كل ما تشتريه هنا يُفعَّل على حساب التطبيق الذي كتبت بريده عند الشراء.</p>
+      </div>
+    </header>
+
+    <!-- يظهر فقط إن كان في هذا التبويب طلب بدأ ولم يُعرض تأكيده -->
+    <div class="guide-order" id="savedOrder" hidden>
+      <span class="bubble bubble--pending" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.5l3 2"/></svg></span>
+      <div>
+        <h2>لديك طلب بدأته في هذا التبويب</h2>
+        <p>اعرض حالته قبل أن تشتري مرة أخرى، حتى لا تدفع مرتين.</p>
+      </div>
+      <a class="btn btn--gold btn--sm" href="checkout.html">اعرض حالة الطلب</a>
+    </div>
+
+    <div class="guide">
+      <section class="guide__i">
+        <span class="buyflow__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span>
+        <h2>مشترياتك ومدة الوصول</h2>
+        <p>افتح التطبيق وادخل بحسابك. تجد ما اشتريته في «دوراتي»، ومعه مدة الوصول لكل باقة. الدورات المفردة وصولها دائم.</p>
+        <div id="stores"></div>
+      </section>
+
+      <section class="guide__i">
+        <span class="buyflow__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <h2>إيصال الشراء</h2>
+        <p>يصلك الإيصال على البريد الذي كتبته، بعد تأكيد الدفع مباشرة. فيه المبلغ ورقم المرجع.</p>
+        <p class="muted">لم يصلك؟ تحقّق من مجلد الرسائل غير المرغوب فيها.</p>
+      </section>
+
+      <section class="guide__i">
+        <span class="buyflow__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg></span>
+        <h2>طلب الاسترداد</h2>
+        <p>راسل الدعم واذكر رقم المرجع من الإيصال. يُعاد المبلغ إلى وسيلة الدفع الأصلية، وعند الاسترداد الكامل يُلغى الوصول المرتبط بهذا الشراء.</p>
+        <p class="acc__links" data-link-host><span data-link-wrap><a data-link="supportEmail">راسل الدعم</a></span><span data-link-wrap> · <a data-link="refund">سياسة الاسترداد</a></span></p>
+      </section>
+
+      <section class="guide__i">
+        <span class="buyflow__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><circle cx="12" cy="16.5" r=".6"/></svg></span>
+        <h2>دفعت ولم تجد الدورة؟</h2>
+        <p><b>لا تدفع مرة أخرى.</b> تأكد أنك دخلت التطبيق بالحساب نفسه الذي كتبت بريده. إن لم تظهر خلال دقائق، راسل الدعم برقم المرجع.</p>
+      </section>
+    </div>
+
+    <p class="guide__why">لماذا لا نعرض مشترياتك هنا؟ لأن معرفة بريد شخص ما يجب ألا تكشف مشترياته. مشترياتك تظهر فقط داخل حسابك في التطبيق.</p>
+  </div>
+</main>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/shared.js"></script>
+<script src="assets/js/account.js"></script>
+</body>
+</html>

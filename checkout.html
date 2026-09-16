@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إتمام الشراء — PREP</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- CSP مقيّدة كما يطلب الباك إند: لا سكربتات خارجية في صفحة الشراء.
+     عند النشر: أضف عنوان الباك إند الحقيقي إلى connect-src (نفس api.baseUrl في config.js). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' http://localhost:8000 https://api.prep.sa; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta name="theme-color" content="#0B2140">
+<link rel="icon" href="assets/logo.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/flow.css">
+</head>
+
+<body class="flowpage">
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="fhead">
+  <div class="wrap fhead__in">
+    <a class="fhead__brand" href="index.html" aria-label="PREP — العودة إلى الصفحة الرئيسية">
+      <img src="assets/logo.png" alt="" width="500" height="305">
+    </a>
+    <p class="fhead__secure">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      دفع آمن عبر ميسّر
+    </p>
+    <a class="fhead__back" href="index.html#plans">العودة إلى الباقات</a>
+  </div>
+</header>
+
+<main class="wrap fmain" id="main">
+  <!-- مراحل الشراء: فقاعات ورقة الإجابات — تمتلئ كلما اكتملت مرحلة -->
+  <ol class="steps" id="steps" aria-label="مراحل الشراء">
+    <li class="steps__i" data-step="details"><span class="steps__b" aria-hidden="true"></span><span class="steps__t">بيانات الحساب</span></li>
+    <li class="steps__i" data-step="pay"><span class="steps__b" aria-hidden="true"></span><span class="steps__t">الدفع</span></li>
+    <li class="steps__i" data-step="done"><span class="steps__b" aria-hidden="true"></span><span class="steps__t">التأكيد</span></li>
+  </ol>
+
+  <div class="fgrid">
+    <section class="panel" id="panel" tabindex="-1" aria-live="polite">
+      <div class="panel__loading"><span class="spin" aria-hidden="true"></span>جارٍ تحميل تفاصيل الطلب…</div>
+    </section>
+
+    <aside class="summary" id="summary" aria-label="ملخّص الطلب" hidden></aside>
+  </div>
+</main>
+
+<noscript>
+  <p class="wrap noscript">يحتاج إتمام الشراء إلى تفعيل JavaScript في المتصفح.</p>
+</noscript>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/shared.js"></script>
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>

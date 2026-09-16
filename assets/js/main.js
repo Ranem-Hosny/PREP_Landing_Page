@@ -77,8 +77,8 @@
 
   /* ── 4. Reveal on scroll ─────────────────── */
   var revealTargets = document.querySelectorAll(
-    '.shead, .exam-lead, .exam-row, .flow__i, .rate__row, .quote, .faq__i, .faq__ask, ' +
-    '.nums, .pay, .tab, .ai__view, .stores, .cta__h, .cta__l, .cta__acts'
+    '.shead, .flow__i, .faq__i, .faq__ask, ' +
+    '.pay, .tab, .ai__view, .stores, .cta__h, .cta__l, .cta__acts'
   );
 
   if (!reduced && 'IntersectionObserver' in window) {
@@ -107,47 +107,7 @@
     });
   }
 
-  /* ── 5. Count-up numbers ─────────────────── */
-  function formatNum(n) {
-    return n.toLocaleString('en-US');
-  }
-
-  function countUp(el) {
-    var target = parseInt(el.getAttribute('data-count'), 10);
-    var suffix = el.getAttribute('data-suffix') || '';
-    if (isNaN(target)) return;
-
-    if (reduced) { el.textContent = formatNum(target) + suffix; return; }
-
-    var dur = 1400;
-    var start = null;
-
-    function frame(ts) {
-      if (start === null) start = ts;
-      var p = Math.min((ts - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = formatNum(Math.round(target * eased)) + suffix;
-      if (p < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-
-  var counters = document.querySelectorAll('[data-count]');
-
-  if ('IntersectionObserver' in window) {
-    var counterObs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        countUp(entry.target);
-        counterObs.unobserve(entry.target);
-      });
-    }, { threshold: 0.6 });
-    Array.prototype.forEach.call(counters, function (el) { counterObs.observe(el); });
-  } else {
-    Array.prototype.forEach.call(counters, countUp);
-  }
-
-  /* ── 6. Score ring + progress bars in view ─ */
+  /* ── 5. Score ring + progress bars in view ─ */
   var ring = document.getElementById('ring');
 
   function fillBars(root) {
@@ -177,7 +137,7 @@
     ring.classList.add('is-in');
   }
 
-  /* ── 7. Pointer parallax on the phone cluster ─
+  /* ── 6. Pointer parallax on the phone cluster ─
      Subtle: the cluster is the page's signature, so it should
      respond to the reader, not perform for them. */
   var cluster = document.getElementById('cluster');
@@ -207,7 +167,7 @@
     });
   }
 
-  /* ── 8. Footer year ──────────────────────── */
+  /* ── 7. Footer year ──────────────────────── */
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
